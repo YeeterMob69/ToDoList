@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskList</title>
+</head>
+<body>
+    
+    <script>
+        //window.localStorage.setItem('name', 'Ludwik'); // tak zapisujemy do magazynu
+        if(window.localStorage.getItem('name') === null){ //jeslu nie ma zapisu o takim kluczu zwraca null
+            let name = window.prompt("podaj imię: "); //wyświetl okieno z zapytaniem
+            window.localStorage.setItem('name', name); //zapisz imię do magazynu
+
+        }
+            
+
+    </script>
+</body>
+</html>
